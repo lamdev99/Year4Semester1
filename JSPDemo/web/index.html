@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC
+    "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Murach's Java Servlets and JSP</title>
+    </head>
+    <body>
+        <h1>Join our email list</h1>
+        <p>To join our email list, enter your name and
+            email address below. <br>
+            Then, click on the Submit button.</p>
+        <form  method="get">
+            <table cellspacing="5" border="0">
+                <tr>
+                    <td align="right">First name:</td>
+                    <td><input type="text" name="firstName"></td>
+                </tr>
+                <tr>
+                    <td align="right">Last name:</td>
+                    <td><input type="text" name="lastName"></td>
+                </tr>
+                <tr>
+                    <td align="right">Email address:</td>
+                    <td><input type="text" name="emailAddress"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>I'm interested in these types of music</p><br>
+                        <input type="checkbox" id="rock" name="music" value="Rock">
+                        <label for="music1">Rock</label><br>
+                        <input type="checkbox" id="country" name="music" value="Country">
+                        <label for="music2">Country</label><br>
+                        <input type="checkbox" id="bluegrass" name="music" value="Bluegrass">
+                        <label for="music3">Bluegrass</label><br>
+                        <input type="checkbox" id="folk" name="music" value="Folk">
+                        <label for="music4">Folk</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit Email" onclick="form.action = 'display_email_entry.jsp'"></td>
+                    <td>
+                        <input type="submit" value="Submit Music" onclick="form.action = 'display_music_choices.jsp'"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
